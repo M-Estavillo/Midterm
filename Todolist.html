@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebarStyle.css">
+    <script src="todolist.js" defer></script>
+    <title>Todo List</title>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li onclick=hideSidebar()><a href="Todolist.html">To-Do List</a></li>
+            <li><a href="stickyNote.html">Sticky Notes</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+        </ul>
+        <ul>
+            <li><img src="icons/list.png" alt="To-Do List logo"></li>
+            <li class ="hideOnMobile"><a href="Todolist.html">To-Do List</a></li>
+            <li class ="hideOnMobile"><a href="stickyNote.html">Sticky Notes</a></li>
+            <li class ="hideOnMobile"><a href="calendar.html">Calendar</a></li>
+            <li class ="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="33px" viewBox="0 -960 960 960" width="33px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <h1>to-do list</h1>
+    <div class="wrapper"> 
+        <form>
+            <input id= "todo-input" type = "text" placeholder="Write event here. . . " autocomplete="off"> 
+            <button id="add-button">ADD</button>
+        </form>
+        <ul id = "todo-list">
+            <!-- <li class = "todo">
+                <input type="checkbox" id="todo-1">
+                <label class ="custom-checkbox" for="todo-1"> 
+                    <svg fill="transparent" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                </label>
+                <label for="todo-1" class="todo-text">
+                    webdev assignment test
+                </label>
+                <button class="delete-button">
+                    <svg fill="var(--secondary-color)" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                </button>
+            </li>
+            <li class = "todo">
+                <input type="checkbox" id="todo-2">
+                <label class ="custom-checkbox" for="todo-2"> 
+                    <svg fill="transparent" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                </label>
+                <label for="todo-2" class="todo-text">
+                    webdev assignment test
+                </label>
+                <button class="delete-button">
+                    <svg fill="var(--secondary-color)" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f">
+                        <path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>
+                </button>
+            </li> -->
+        </ul>
+    </div>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex';
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
+<!--https://www.flaticon.com/free-icons/to-do-list-->

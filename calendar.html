@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sidebarStyle.css">
+    <link rel="stylesheet" href="calendarStyle.css">
+    <script src="calendar.js" defer></script>
+    <title>Calendar</title>
+</head>
+<body>
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#1f1f1f"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="Todolist.html">To-Do List</a></li>
+            <li><a href="stickyNote.html">Sticky Notes</a></li>
+            <li onclick=hideSidebar()><a href="">Calendar</a></li>
+        </ul>
+        <ul>
+            <li><img src="icons/calendar_month_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Calendar Icon"></li>
+            <li class ="hideOnMobile"><a href="Todolist.html">To-Do List</a></li>
+            <li class ="hideOnMobile"><a href="stickyNote.html">Sticky Notes</a></li>
+            <li class ="hideOnMobile"><a href="#">Calendar</a></li>
+            <li class ="menuButton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="33px" viewBox="0 -960 960 960" width="33px" fill="#1f1f1f"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <h1>Calendar</h1>
+
+    <div class="wrapper">
+
+        <div class="calendar">
+            <div class="left">
+                <p id="date">23</p>
+                <p id="day">Sunday</p>
+            </div>
+            <div class="right">
+                <p id="month">mar</p>
+                <p id="year">2025</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+:root{
+    --background: 	#121212;
+    --primary-color: #444444;
+    --secondary-color:	#B0B0B0;
+    --accent-color: #6f6f6f;
+    --text-color: #c0bebe;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    color: var(--text-color);
+    font-size: 16pt;
+    font-family: sans-serif;
+}
+
+nav ul li:nth-of-type(3){
+    background: #5c5c5c;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.wrapper{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding:30px;
+}
+
+#app{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    padding: 24px;
+    gap: 24px;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+h1{
+    color: var(--accent-color);
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    padding-top: 100px ;
+    text-transform: uppercase;
+}
+
+.note{
+    height: 200px;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    font-size: 16px;
+    background-color: #6f6f6f;
+}
+
+.addNote{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.525);
+    border: none;
+    cursor: pointer;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.2s;
+    height: 200px;
+}
+
+.addNote:hover{
+    background: rgba(255, 255, 255, 0.6);;
+}
+
+::placeholder{
+    color: #12121294;
+}
